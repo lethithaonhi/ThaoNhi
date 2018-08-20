@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.FlashSreenActivity"
+    android:background="#cd2027"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@drawable/foodymain"/>
+
+    <TextView
+        android:textSize="18dp"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:id="@+id/txtversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:indeterminateTint="#ffff"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:text="@string/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#ffff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

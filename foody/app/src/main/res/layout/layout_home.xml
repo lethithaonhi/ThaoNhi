@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_margin="15dp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_f"/>
+            
+            <RadioGroup
+                android:id="@+id/rdg_place_food"
+                android:background="@drawable/custom_radio_home"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:textColor="@drawable/changetext_radio_home"
+                    android:id="@+id/rd_place"
+                    android:padding="10dp"
+                    android:checked="true"
+                    android:background="@drawable/custom_radio_place"
+                    android:button="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place"/>
+
+                <RadioButton
+                    android:textColor="@drawable/changetext_radio_home"
+                    android:id="@+id/rd_food"
+                    android:padding="10dp"
+                    android:background="@drawable/custom_radio_food"
+                    android:button="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food"/>
+            </RadioGroup>
+
+            <ImageView
+                android:layout_gravity="right"
+                android:src="@drawable/add"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarComment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/btnDangComment"
+            android:layout_marginRight="10dp"
+            android:text="@string/post"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Grey">
+
+        <TextView
+            android:id="@+id/txtTenQuanAn"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gogi House"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/txtDiaChiQuanAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2323 Đường phố"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tittle (optional)"
+        android:textSize="12sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Grey"/>
+
+    <EditText
+        android:id="@+id/edtNoiDung"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Write content here!"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleChonHinhBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/Grey"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/camerablack"/>
+
+        <ImageButton
+            android:id="@+id/btnHashtag"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hashtag"/>
+
+        <ImageButton
+            android:id="@+id/btnChamDiem"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/star"/>
+
+    </LinearLayout>
+
+</LinearLayout>

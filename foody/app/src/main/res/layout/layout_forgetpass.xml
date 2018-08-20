@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/bg1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentbackgroundLogin">
+
+        <ImageView
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/foody"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:textSize="19dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Your Password?"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter yout Email to send your Password"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Email Address"
+            android:textColorHint="@color/colorText"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorText" />
+
+
+        <Button
+            android:textSize="18dp"
+            android:drawablePadding="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_login"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Submit" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetpass"/>
+
+            <TextView
+                android:id="@+id/txtCreateAccount"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
